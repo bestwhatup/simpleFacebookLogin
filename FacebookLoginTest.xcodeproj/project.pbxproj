@@ -14,6 +14,7 @@
 		384BC0131A6A196600F1B011 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384BC0121A6A196600F1B011 /* Images.xcassets */; };
 		384BC0161A6A196600F1B011 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 384BC0141A6A196600F1B011 /* LaunchScreen.xib */; };
 		384BC0221A6A196600F1B011 /* FacebookLoginTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 384BC0211A6A196600F1B011 /* FacebookLoginTestTests.m */; };
+		384BC02D1A6A1C2400F1B011 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384BC02C1A6A1C2400F1B011 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		384BC01B1A6A196600F1B011 /* FacebookLoginTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookLoginTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		384BC0201A6A196600F1B011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384BC0211A6A196600F1B011 /* FacebookLoginTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookLoginTestTests.m; sourceTree = "<group>"; };
+		384BC02C1A6A1C2400F1B011 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384BC02D1A6A1C2400F1B011 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				384BC0041A6A196600F1B011 /* FacebookLoginTest */,
+				384BC02C1A6A1C2400F1B011 /* FacebookSDK.framework */,
 				384BC01E1A6A196600F1B011 /* FacebookLoginTestTests */,
 				384BC0031A6A196600F1B011 /* Products */,
 			);
@@ -343,6 +347,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chawatvish/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = FacebookLoginTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/chawatvish/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = FacebookLoginTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
